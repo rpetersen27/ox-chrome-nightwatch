@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+
+    "name": "OX Nightwatch Recorder",
+    "description": "This extension records user interactions with the OX Appsuite and parses them into a Nightwatch.JS compatible format",
+    "version": "1.0",
+    "background": {
+        "persistent": false,
+        "scripts": ["background/main.js"]
+    },
+    "browser_action": {
+        "default_icon": "logo.png",
+        "default_title": "Click to start recording"
+    },
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": [
+            "node_modules/jquery/dist/jquery.min.js",
+            "inject/main.js",
+            "inject/path.js"
+        ]
+    }],
+    "permissions": [
+        "activeTab"
+    ]
+}

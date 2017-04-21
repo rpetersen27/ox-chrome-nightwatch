@@ -1,0 +1,23 @@
+{
+    extends: [
+        '../.eslintrc'
+    ],
+
+    env: {
+        'node': true,
+        'mocha': true,
+        'es6': true
+    },
+
+    'globals': {
+
+    },
+
+    rules: {
+        // use arrow callback where possible
+        prefer-arrow-callback: 2,
+
+        // only use let/const instead of var
+        'no-var': 2,
+    }
+}

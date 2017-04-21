@@ -1,0 +1,27 @@
+{
+  "name": "chrome-nightwatch",
+  "version": "0.1.0",
+  "description": "A chrome plugin to record user actions and translate them into nightwatch.js code.",
+  "scripts": {
+    "test": "eslint background/** inject/** test/**/*test.js && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holorium/ox-chrome-nightwatch.git"
+  },
+  "author": "Richard Petersen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Holorium/ox-chrome-nightwatch/issues"
+  },
+  "homepage": "https://github.com/Holorium/ox-chrome-nightwatch#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "jsdom": "^9.12.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
